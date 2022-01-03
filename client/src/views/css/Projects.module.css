@@ -39,11 +39,14 @@
 .text {
     position: absolute;
     display: flex;
-    width: 40%;
+    width: 30%;
     flex-direction: column;
     color: white; 
     padding-left: 4%;
+    padding-right: 4%;
     font-weight: bold;
+    background-color: #474B4F;
+    height: 500px;
 }
 
 .text h2{

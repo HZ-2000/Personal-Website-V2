@@ -5,7 +5,7 @@ import styles from './css/Projects.module.css';
 //images
 import net from '../assets/img/pietro-jeng-n6B49lTx7NM-unsplash.jpg';
 import tomatoe from '../assets/img/dennis-klein-FzB_512zvP0-unsplash.jpg';
-import home from '../assets/img/maksim-istomin-N8VVveiNVbU-unsplash.jpg';
+import home from '../assets/img/vu-anh-TiVPTYCG_3E-unsplash.jpg';
 import tree from '../assets/img/dan-otis-OYFHT4X5isg-unsplash.jpg';
 
 export const Projects: React.FC = () => {
@@ -52,7 +52,7 @@ export const Projects: React.FC = () => {
                 </div>
 
                 <div className={styles.project}>
-                    <div className={styles.text}>
+                    <div className={styles.text} >
                         <h2>pomodoro timer</h2>
                         <p> a pomodoro timer that has a task list attached, so that you may log tasks and use the timer above to manage your time </p>
                         <div className={styles.link_wrapper}>

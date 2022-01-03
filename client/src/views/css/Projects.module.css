@@ -1,0 +1,67 @@
+.main {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Major Mono Display";
+    background-color: #222629;
+}
+
+.title {
+    color: white;
+    font-size: 1.6em;
+    padding-left: 4%;
+}
+
+.projectGrid {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    row-gap: 20px;
+}
+
+.project {
+    overflow: hidden;
+    height: 500px;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.project img {
+    width: 100%;
+    margin-top: 0;
+}
+
+.text {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    color: white; 
+    padding-left: 4%;
+    font-weight: bold;
+}
+
+.text h2{
+    font-size: 3em;
+}
+
+.text p{
+    font-size: 1.5em;
+}
+
+.link_wrapper a{
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    text-decoration: none;
+    color: #86c232;
+}
+
+.link_wrapper a:hover {
+    border-bottom: 1px solid #86c232;
+}

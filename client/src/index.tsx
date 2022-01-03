@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Homepage } from './views/Homepage';
+import { Contact } from './views/Contact';
+import { Projects } from './views/Projects';
 import './index.css';
-import App from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Routes>
+      <Route path='/' element={<Homepage />} />
+      <Route path='/contact' element={<Contact />} />
+      <Route path='/projects' element={<Projects />} />
+    </Routes>
+  </Router>
+  ,
   document.getElementById('root')
 );

@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Right-Side {
+    padding-right: 22px;
+    color:#86c232;
+    font-size: .8em;
+    height: 22px;
+}
+
+.Left-Side {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+}
+
+.link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    text-decoration: none;
+    color:#86c232;
+}
+
+.link-wrapper:hover {
+    border-bottom: 1px solid #86c232;
+}

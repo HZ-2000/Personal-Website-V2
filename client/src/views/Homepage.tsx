@@ -1,4 +1,3 @@
-import React from 'react';
 import { Nav } from '../components/Nav';
 import Particles from "react-tsparticles";
 import styles from './css/Home.module.css';

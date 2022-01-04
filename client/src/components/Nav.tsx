@@ -1,4 +1,3 @@
-import React from 'react';
 import './css/Nav.css';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +13,9 @@ export const Nav: React.FC = () => {
                 </ul>
                 <ul>
                     <Link className='link-wrapper' to='/projects'>projects</Link>
+                </ul>
+                <ul>
+                    <Link className='link-wrapper' to='/cgol'>CGOL</Link>
                 </ul>
             </div>
 

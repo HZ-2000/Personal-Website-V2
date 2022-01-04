@@ -1,4 +1,3 @@
-import React from 'react';
 import { Nav } from '../components/Nav';
 import styles from './css/Contact.module.css';
 import resume from '../assets/img/Resume.png';

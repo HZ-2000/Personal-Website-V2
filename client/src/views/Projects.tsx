@@ -1,4 +1,3 @@
-import React from 'react';
 import { Nav } from '../components/Nav';
 import styles from './css/Projects.module.css';
 

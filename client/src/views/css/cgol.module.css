@@ -1,0 +1,58 @@
+.main {
+    height: 100%;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Major Mono Display";
+    background-color: #222629;
+    color: white;
+}
+
+.game {
+    display: flex;
+    padding-left: 4%;
+    padding-bottom: 4%;
+}
+
+.title {
+    font-size: 1.6em;
+    padding-left: 4%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #474B4F;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 10px; 
+    width: 20%;
+    border-radius: 6px;
+}
+
+.tempelatesSection {
+    padding-left: 4%;
+}
+
+.tempelates {
+    width: 500px;
+    list-style: none;
+}
+
+.tempelate {
+    background-color: #474B4F;
+    padding-bottom: 20px;
+}
+
+.tempelate h2 {
+    padding-top: 35px;
+    color: white;
+}
+
+
+

@@ -1,11 +1,7 @@
 .main {
-    height: 100%;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
     font-family: "Major Mono Display";
-    background-color: #222629;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color-2);
 }
 
 .game {
@@ -25,9 +21,8 @@
 }
 
 .button {
-    background-color: #474B4F;
+    background-color: var(--background-color-secondary);
     border: none;
-    color: white;
     text-align: center;
     font-size: 1.4em;
     padding: 10px; 
@@ -45,13 +40,12 @@
 }
 
 .tempelate {
-    background-color: #474B4F;
+    background-color: var(--background-color-secondary);
     padding-bottom: 20px;
 }
 
 .tempelate h2 {
     padding-top: 35px;
-    color: white;
 }
 
 

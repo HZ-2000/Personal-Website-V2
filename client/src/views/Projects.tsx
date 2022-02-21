@@ -1,5 +1,6 @@
 import { Nav } from '../components/Nav';
 import styles from './css/Projects.module.css';
+import './css/vars.css';
 
 //images
 import net from '../assets/img/pietro-jeng-n6B49lTx7NM-unsplash.jpg';
@@ -22,7 +23,7 @@ export const Projects: React.FC = () => {
                         <h2>ml demo</h2>
                         <p>a simple application built with python that allows the user to play with a neural network to understand what factors effect its results</p>
                         <div className={styles.link_wrapper}>
-                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo.git'>Link</a>
+                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo.git'>link</a>
                         </div>
                     </div>
                     <img src={net} alt='net' />
@@ -33,7 +34,7 @@ export const Projects: React.FC = () => {
                         <h2>fair home pro</h2>
                         <p>fairhomepro, a home care market place where users can find contractors for different home improvment tasks</p>
                         <div className={styles.link_wrapper}>
-                            <a href='https://github.com/HZ-2000/FairHomePro.git'>Link</a>
+                            <a href='https://github.com/HZ-2000/FairHomePro.git'>link</a>
                         </div>
                     </div>
                     <img src={home} alt='home' />
@@ -44,7 +45,7 @@ export const Projects: React.FC = () => {
                         <h2>personal website V2</h2>
                         <p> this is the website you are currently viewing! the second version added a new react frontend with typescript </p>
                         <div className={styles.link_wrapper}>
-                            <a href='https://github.com/HZ-2000/Personal-Website-V2.git'>Link</a>
+                            <a href='https://github.com/HZ-2000/Personal-Website-V2.git'>link</a>
                         </div>
                     </div>
                     <img src={tree} alt='tree' />
@@ -55,7 +56,7 @@ export const Projects: React.FC = () => {
                         <h2>pomodoro timer</h2>
                         <p> a pomodoro timer that has a task list attached, so that you may log tasks and use the timer above to manage your time </p>
                         <div className={styles.link_wrapper}>
-                            <a href='https://github.com/HZ-2000/Pomodoro-Timer'>Link</a>
+                            <a href='https://github.com/HZ-2000/Pomodoro-Timer'>link</a>
                         </div>
                     </div>
                     <img src={tomatoe} alt='tomatoe' />

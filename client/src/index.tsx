@@ -5,9 +5,11 @@ import { Contact } from './views/Contact';
 import { Projects } from './views/Projects';
 import { CGOL } from './views/cgol';
 import './index.css';
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.render(
   <Router>
+    <ScrollToTop />
     <Routes>
       <Route path='/' element={<Homepage />} />
       <Route path='/contact' element={<Contact />} />

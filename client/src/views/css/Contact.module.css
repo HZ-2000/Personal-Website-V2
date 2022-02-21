@@ -1,25 +1,22 @@
 .main {
-    height: 100%;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
     font-family: "Major Mono Display";
-    background-color: #222629;
+    background-color: var(--background-color);
 }
 
 .title {
-    color: white;
+    color: var(--text-color-2);
     font-size: 1.6em;
     padding-left: 4%;
 }
 
 .information {
     padding-left: 4%;
-    color: white;
+    color: var(--text-color-2);
 }
 
 .image {
     padding-left: 4%;
     width: 50%;
     padding-bottom: 4%;
+    opacity: 70%;
 }

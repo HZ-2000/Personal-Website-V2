@@ -1,5 +1,6 @@
 import { Nav } from '../components/Nav';
 import styles from './css/Contact.module.css';
+import './css/vars.css';
 import resume from '../assets/img/Resume.png';
 
 export const Contact: React.FC = () => {

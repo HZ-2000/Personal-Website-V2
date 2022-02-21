@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useRef } from "react";
 import { Nav } from '../components/Nav';
 import styles from './css/cgol.module.css';
+import './css/vars.css';
 import produce from 'immer';
 
 const numRows = 50;

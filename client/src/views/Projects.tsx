@@ -19,47 +19,39 @@ export const Projects: React.FC = () => {
 
             <div className={styles.projectGrid}>
                 <div className={styles.project}>
+                <img src={net} alt='net' />
                     <div className={styles.text}>
                         <h2>ml demo</h2>
-                        <p>a simple application built with python that allows the user to play with a neural network to understand what factors effect its results</p>
-                        <div className={styles.link_wrapper}>
-                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo.git'>link</a>
-                        </div>
+                        <p>a simple application built with python that allows the user to play with a neural network for educational purposes</p>
+                        <a className={styles.link_wrapper} href='https://github.com/HZ-2000/Machine-Learning-Demo.git'>link</a>
                     </div>
-                    <img src={net} alt='net' />
                 </div>
 
                 <div className={styles.project}>
+                <img src={home} alt='home' />
                     <div className={styles.text}>
                         <h2>fair home pro</h2>
                         <p>fairhomepro, a home care market place where users can find contractors for different home improvment tasks</p>
-                        <div className={styles.link_wrapper}>
-                            <a href='https://github.com/HZ-2000/FairHomePro.git'>link</a>
-                        </div>
+                        <a className={styles.link_wrapper} href='https://github.com/HZ-2000/FairHomePro.git'>link</a>
                     </div>
-                    <img src={home} alt='home' />
                 </div>
 
                 <div className={styles.project}>
+                <img src={tree} alt='tree' />
                     <div className={styles.text}>
                         <h2>personal website V2</h2>
                         <p> this is the website you are currently viewing! the second version added a new react frontend with typescript </p>
-                        <div className={styles.link_wrapper}>
-                            <a href='https://github.com/HZ-2000/Personal-Website-V2.git'>link</a>
-                        </div>
+                        <a className={styles.link_wrapper} href='https://github.com/HZ-2000/Personal-Website-V2.git'>link</a>
                     </div>
-                    <img src={tree} alt='tree' />
                 </div>
 
                 <div className={styles.project}>
+                <img src={tomatoe} alt='tomatoe' /> 
                     <div className={styles.text} >
                         <h2>pomodoro timer</h2>
                         <p> a pomodoro timer that has a task list attached, so that you may log tasks and use the timer above to manage your time </p>
-                        <div className={styles.link_wrapper}>
-                            <a href='https://github.com/HZ-2000/Pomodoro-Timer'>link</a>
-                        </div>
+                        <a className={styles.link_wrapper} href='https://github.com/HZ-2000/Pomodoro-Timer'>link</a>
                     </div>
-                    <img src={tomatoe} alt='tomatoe' />
                 </div>
             </div>
         </div>

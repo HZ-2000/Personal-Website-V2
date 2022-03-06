@@ -49,7 +49,7 @@ export const Homepage: React.FC = () => {
                     },
                     links: {
                         color: "#F7CE3E",
-                        distance: 150,
+                        distance: 50,
                         enable: true,
                         opacity: 0.5,
                         width: 1,
@@ -70,7 +70,7 @@ export const Homepage: React.FC = () => {
                         enable: true,
                         area: 800,
                         },
-                        value: 20,
+                        value: 60,
                     },
                     opacity: {
                         value: 0.5,

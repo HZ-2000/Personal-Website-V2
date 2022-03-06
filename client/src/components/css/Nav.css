@@ -1,20 +1,19 @@
 nav {
     display: flex;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .Right-Side {
     display: flex;
     justify-content: space-evenly;
     font-size: 1.2em;
-    padding-right: 22px;
 }
 
 .Left-Side {
-    padding-left: 22px;
-    color: #CC9900;
+    color: var(--text-color-1);
     font-size: .8em;
-    height: 22px;
 }
 
 .link-wrapper {
@@ -26,6 +25,24 @@ nav {
 }
 
 .link-wrapper:hover {
-    border-bottom: 1px solid #CC9900;
-    color: #CC9900;
+    border-bottom: 1px solid var(--text-color-1);
+    color: var(--text-color-1);
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Left-Side {
+        display: none; 
+    }
+    .Right-Side{
+        font-size: 1.1em;
+        padding-left: 0px;
+    }
+
+    .cgol {
+        display: none;
+    }
 }

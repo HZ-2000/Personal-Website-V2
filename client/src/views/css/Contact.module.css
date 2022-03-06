@@ -1,6 +1,7 @@
 .main {
     font-family: "Major Mono Display";
     background-color: var(--background-color);
+    height: 100%;
 }
 
 .title {
@@ -16,7 +17,21 @@
 
 .image {
     padding-left: 4%;
-    width: 50%;
+    width: 60%;
     padding-bottom: 4%;
     opacity: 70%;
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 1.2em;
+    }
+
+    .information {
+        font-size: .8em;
+    }
+
+    .image {
+        width: 90%;
+    }
 }

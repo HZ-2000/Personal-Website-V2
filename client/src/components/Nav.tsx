@@ -19,7 +19,7 @@ export const Nav: React.FC = () => {
                 <ul>
                     <Link className='link-wrapper' to='/projects'>projects</Link>
                 </ul>
-                <ul>
+                <ul className='cgol'>
                     <Link className='link-wrapper' to='/cgol'>cgol</Link>
                 </ul>
             </div>

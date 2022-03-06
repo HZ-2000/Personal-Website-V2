@@ -1,6 +1,6 @@
 .main {
     font-family: "Major Mono Display";
-    background-color: var(--background-color);
+    background-color: var(--background-color); 
 }
 
 .title {
@@ -19,20 +19,20 @@
 
 .projects {
     position: absolute;
-    width: 92%;
-    padding: 4%;
-    padding-bottom: 2%;
     background-color: var(--background-color-secondary);
 }
 
 .projects h1{
     font-size: 3em;
+    padding-left: 4%;
+    color: var(--text-color-2);
 }
 
 .projectGrid {
     display: grid;
     grid-template-columns: 48% 48%;
     column-gap: 4%;
+    padding: 4%;
 }
 
 .project {
@@ -53,6 +53,7 @@
 
 .projectText {
     color: var(--text-color-1);
+    background-color: var(--background-color);
     padding-bottom: 4%;
     padding-left: 4%;
 }
@@ -71,16 +72,12 @@
 }
 
 @media (max-width: 992px) {
-    .title h1 {
-      font-size: 3em;
-    }
-  
-    .title p {
-      font-size: 1em;
-    }
-
-    .projects {
-        width: 92%;
-        padding: 4%;
+    .projectGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10%;
+        background-color: var(--background-color-secondary);
+        padding-bottom: 40%;
     }
 }

@@ -16,9 +16,6 @@ export const Nav: React.FC = () => {
                 <ul>
                     <Link className='link-wrapper' to='/contact'>contact</Link>
                 </ul>
-                <ul>
-                    <Link className='link-wrapper' to='/projects'>projects</Link>
-                </ul>
                 <ul className='cgol'>
                     <Link className='link-wrapper' to='/cgol'>cgol</Link>
                 </ul>
@@ -27,3 +24,5 @@ export const Nav: React.FC = () => {
 
     )
 }
+
+export default Nav;

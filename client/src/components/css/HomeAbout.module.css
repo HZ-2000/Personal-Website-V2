@@ -1,0 +1,51 @@
+.main {
+    font-family: "Major Mono Display";
+    background-color: var(--background-color); 
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    height: 50vh;
+}
+
+.portrait {
+    color: var(--text-color);
+    width: 50%;
+    margin: 20px;
+}
+
+.portrait img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    color: var(--text-color);
+    background-color: var(--background-color-secondary);
+    margin: 20px;
+    width: 50%;
+    font-size: 1em;
+}
+
+@media(max-width: 998px) {
+    .main {
+        height: 50vh;
+    }
+    
+    .portrait {
+        width: 90%;
+        Height: 94%;
+    }
+}
+
+@media(max-width: 768px) {
+    .main {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .portrait {
+        width: 90%;
+        Height: 80%;
+    }
+}

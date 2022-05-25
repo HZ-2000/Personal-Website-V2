@@ -1,0 +1,83 @@
+.main {
+    font-family: "Major Mono Display";
+    background-color: var(--background-color);
+    color: var(--text-color-2);
+}
+
+.title {
+    font-size: 1.6em;
+    padding-left: 4%;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 4%;
+    row-gap: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 8%;
+}
+
+.project {
+    background-color: var(--background-color-secondary);
+}
+
+
+.project img {
+    float: up;
+    width: 100%;
+    height: 60%;
+    object-fit: fill;
+}
+
+.text {
+    color: var(--text-color-1);
+    padding-left: 4%;
+}
+
+.text h2{
+    font-size: 3em;
+}
+
+.text p{
+    font-size: 1.5em;
+}
+
+.link_wrapper{
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    text-decoration: none;
+    color: var(--text-color-1);
+}
+
+.link_wrapper:hover {
+    border-bottom: 1px solid var(--text-color-1);
+}
+
+@media (max-width: 992px) {
+    .project img {
+        float: up;
+        width: 100%;
+        height: 50%;
+        object-fit: fill;
+    }
+
+    .projectGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1.2fr 1fr;
+        row-gap: 2%;
+        padding-bottom: 40%;
+    }
+    
+    .text h2{
+        font-size: 2em;
+    }
+    
+    .text p{
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,83 @@
+.main {
+    font-family: "Major Mono Display";
+    background-color: var(--background-color); 
+}
+
+.title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-2);
+    padding: 14%;
+}
+
+.title h1 {
+    font-size: 4em;
+}
+
+.projects {
+    position: absolute;
+    background-color: var(--background-color-secondary);
+}
+
+.projects h1{
+    font-size: 3em;
+    padding-left: 4%;
+    color: var(--text-color-2);
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    padding: 4%;
+}
+
+.project {
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+.project h2{
+    font-size: 2em;
+}
+
+.image {
+    float: up;
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+}
+
+.projectText {
+    color: var(--text-color-1);
+    background-color: var(--background-color);
+    padding-bottom: 4%;
+    padding-left: 4%;
+}
+
+.link_wrapper {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    text-decoration: none;
+    color:var(--text-color-2);
+    font-size: 1.2em;
+}
+
+.link_wrapper:hover {
+    color: var(--text-color-1);
+    border-bottom: 1px solid var(--text-color-1);
+}
+
+@media (max-width: 992px) {
+    .projectGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10%;
+        background-color: var(--background-color-secondary);
+        padding-bottom: 40%;
+    }
+}

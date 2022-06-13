@@ -1,7 +1,5 @@
 .main {
     font-family: "Major Mono Display";
-    background-color: var(--background-color);
-    height: 100%;
 }
 
 .title {

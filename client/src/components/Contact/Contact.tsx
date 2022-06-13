@@ -1,7 +1,6 @@
-import { Nav } from '../components/Nav';
-import styles from './css/Contact.module.css';
-import './css/vars.css';
-import resume from '../assets/img/Resume.png';
+import styles from './Contact.module.css';
+import resume from '../../assets/img/Resume.png';
+import { Nav } from '../Nav/Nav';
 
 export const Contact: React.FC = () => {
     document.title = "ZH | Contact";
@@ -9,7 +8,7 @@ export const Contact: React.FC = () => {
         <div className={styles.main}>
             <Nav />
             <div className={styles.title}>
-                <h1>contact</h1>
+                <p>contact</p>
             </div>
 
             <div className={styles.information}>

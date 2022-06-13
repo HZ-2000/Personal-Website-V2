@@ -1,12 +1,11 @@
-import { Nav } from '../components/Nav';
-import styles from './css/Projects.module.css';
-import './css/vars.css';
+import styles from './Projects.module.css';
+import { Nav } from '../Nav/Nav';
 
 //images
-import net from '../assets/img/pietro-jeng-n6B49lTx7NM-unsplash.jpg';
-import tomatoe from '../assets/img/dennis-klein-FzB_512zvP0-unsplash.jpg';
-import home from '../assets/img/vu-anh-TiVPTYCG_3E-unsplash.jpg';
-import tree from '../assets/img/dan-otis-OYFHT4X5isg-unsplash.jpg';
+import net from '../../assets/img/pietro-jeng-n6B49lTx7NM-unsplash.jpg';
+import tomatoe from '../../assets/img/dennis-klein-FzB_512zvP0-unsplash.jpg';
+import home from '../../assets/img/vu-anh-TiVPTYCG_3E-unsplash.jpg';
+import tree from '../../assets/img/dan-otis-OYFHT4X5isg-unsplash.jpg';
 
 export const Projects: React.FC = () => {
     document.title = "ZH | Projects";
@@ -16,7 +15,6 @@ export const Projects: React.FC = () => {
             <div className={styles.title}>
                 <h1>projects</h1>
             </div>
-
             <div className={styles.projectGrid}>
                 <div className={styles.project}>
                 <img src={net} alt='net' />

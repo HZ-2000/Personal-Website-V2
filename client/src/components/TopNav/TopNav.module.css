@@ -1,0 +1,20 @@
+.HorizontalNav {
+    display: flex;
+    width: 100vw;
+    padding-right: 10%;
+    position: fixed;
+    justify-content: right;
+    font-family: 'Orbitron', sans-serif;
+    list-style: none;
+    color: darkgray;
+    font-size: 1.3em;
+}
+
+.HorizontalNav li {
+    padding-right: 4%;
+}
+
+.LinkWrapper {
+    text-decoration: none;
+    color: white;
+}

@@ -1,19 +1,6 @@
 .main {
-    font-family: "Major Mono Display";
-    background-color: green; 
-    min-height: 100vh;
-}
-
-.title {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color-2);
-    padding: 14%;
-}
-
-.title h1 {
-    font-size: 4em;
+    font-size: 1.4em;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    padding-left: 4%;
 }

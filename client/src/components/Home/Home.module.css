@@ -1,6 +1,14 @@
+section {
+    display: grid;
+    background-color: darkslategray;
+    height: 100vh;
+}
+
 .main {
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-family: 'Orbitron', sans-serif;
     color: white;
-    padding-left: 4%;
+    text-align: right;
+    margin: auto;
+    width: 96%;
 }

@@ -1,24 +1,26 @@
 import './Nav.css';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 export const Nav: React.FC = () => {
     return(
         <nav>
-            <div className='Left-Side'>
-                <h1>zach heimbigner</h1>
-            </div>
-
-            <div className='Right-Side'>
-                <ul>
-                    <Link className='link-wrapper' to='/'>home</Link>
-                </ul>
-                <ul>
-                    <Link className='link-wrapper' to='/contact'>contact</Link>
-                </ul>
-                <ul>
-                    <Link className='link-wrapper' to='/projects'>projects</Link>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <Link activeClass='active' smooth spy to='home'>-&nbsp;01</Link>
+                </li>
+                <li>
+                    -
+                </li>
+                <li>
+                    <Link activeClass='active' smooth spy to='projects'>-&nbsp;02</Link>
+                </li>
+                <li>
+                    -
+                </li>
+                <li>
+                    <Link activeClass='active' smooth spy to='contact'>-&nbsp;03</Link>
+                </li>
+            </ul>
         </nav>
 
     )

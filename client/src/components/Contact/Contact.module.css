@@ -1,35 +1,6 @@
 .main {
-    font-family: "Major Mono Display";
-}
-
-.title {
-    color: var(--text-color-2);
-    font-size: 1.6em;
+    font-size: 1.4em;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
     padding-left: 4%;
-}
-
-.information {
-    padding-left: 4%;
-    color: var(--text-color-2);
-}
-
-.image {
-    padding-left: 4%;
-    width: 60%;
-    padding-bottom: 4%;
-    opacity: 70%;
-}
-
-@media (max-width: 992px) {
-    .title {
-        font-size: 1.2em;
-    }
-
-    .information {
-        font-size: .8em;
-    }
-
-    .image {
-        width: 90%;
-    }
 }

@@ -3,4 +3,7 @@
     font-family: 'Orbitron', sans-serif;
     color: white;
     padding-left: 4%;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
 }

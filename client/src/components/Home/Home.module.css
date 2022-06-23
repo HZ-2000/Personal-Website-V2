@@ -1,14 +1,26 @@
+.main {
+    background-image: url('../../assets/daniel-olah-HNkgPFBShSw-unsplash-darker.jpg');
+    background-size: cover;
+}
+
 section {
     display: grid;
-    background-color: darkslategray;
     height: 100vh;
 }
 
-.main {
+.welcome{
+    margin: auto;
+    width: 96%;
+    font-size: 3em;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: right;
+}
+
+.title {
     font-size: 1.8em;
     font-family: 'Orbitron', sans-serif;
     color: white;
     text-align: right;
-    margin: auto;
-    width: 96%;
+    padding-right: 4%;
 }

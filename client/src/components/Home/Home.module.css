@@ -24,3 +24,19 @@ section {
     text-align: right;
     padding-right: 4%;
 }
+
+.projBox {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 4%;
+    height: 80%;
+
+}
+
+.gridItem {
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 20px;
+    width: 100%;
+
+}

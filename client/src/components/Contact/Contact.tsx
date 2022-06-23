@@ -5,7 +5,9 @@ export const Contact: React.FC = () => {
     return (
         <div className={styles.main}>
             <TopNav />
-            <h1>Contact</h1>
+            <div className={styles.title}>
+                <h1>Contact</h1>
+            </div>
         </div>
     )
 }

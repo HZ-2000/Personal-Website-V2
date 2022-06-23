@@ -1,17 +1,15 @@
 .HorizontalNav {
     display: flex;
-    width: 100vw;
-    padding-right: 10%;
-    position: fixed;
+    position: absolute;
+    width: 96%;
     justify-content: right;
     font-family: 'Orbitron', sans-serif;
     list-style: none;
-    color: darkgray;
     font-size: 1.3em;
 }
 
 .HorizontalNav li {
-    padding-right: 4%;
+    padding-left: 4%;
 }
 
 .LinkWrapper {

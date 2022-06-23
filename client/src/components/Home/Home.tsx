@@ -1,5 +1,5 @@
 import styles from './Home.module.css';
-import { TopNav, SideNav, Contact } from '..';
+import { TopNav, SideNav } from '..';
 
 export const Home: React.FC = () => {
     return(
@@ -15,11 +15,29 @@ export const Home: React.FC = () => {
             <section id="projects">
                 <div className={styles.title}>
                     <h1>Featured Projects</h1>
+                    <div className={styles.projBox}>
+                        <div className={styles.gridItem}>
+                            <h1>bloom</h1>
+                        </div>
+                        <div style={{"width": "4%"}}/>
+                        <div className={styles.gridItem}>
+                            <h1>tacos</h1>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="contact">
                 <div className={styles.title}>
                     <h1>Upcoming Projects</h1>
+                    <div className={styles.projBox}>
+                        <div className={styles.gridItem}>
+                            <h1>nachos</h1>
+                        </div>
+                        <div style={{"width": "4%"}}/>
+                        <div className={styles.gridItem}>
+                            <h1>steak</h1>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

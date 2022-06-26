@@ -41,13 +41,15 @@ export const Home: React.FC = () => {
                         <div className={styles.gridItem}>
                             <p className={styles.gridItemTitle}>Machine Learning Demo</p>
                             <p>this is a brief description of the project and will be displayed above the link to my github where the project is!</p>
-                            <a href='' className={styles.LinkWrapper}>link</a>
+                            <p>Languages: Python</p>
+                            <a href='/' className={styles.LinkWrapper}>link</a>
                         </div>
                         <div style={{"width": "4%"}}/>
                         <div className={styles.gridItem}>
                             <p className={styles.gridItemTitle}>Fair Home Pro</p>
                             <p>this is a brief description of the project and will be displayed above the link to my github where the project is!</p>
-                            <a href='' className={styles.LinkWrapper}>link</a>
+                            <p>Languages: </p>
+                            <a href='/' className={styles.LinkWrapper}>link</a>
                         </div>
                     </div>
                 </div>

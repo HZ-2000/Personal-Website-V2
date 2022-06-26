@@ -1,3 +1,5 @@
+import './vars.css';
+
 export { Contact } from './Contact/Contact';
 export { Home } from './Home/Home';
 export { Projects } from './Projects/Projects';

@@ -1,6 +1,8 @@
 .main {
-    background-image: url('../../assets/daniel-olah-HNkgPFBShSw-unsplash-darker.jpg');
+    background-image: url('../../assets/pawel-czerwinski-BNhoExCn9V4-unsplash.jpg');
     background-size: cover;
+    color: var(--primary-text-color);
+    font-family: var(--text-font);
 }
 
 section {
@@ -8,19 +10,26 @@ section {
     height: 100vh;
 }
 
-.welcome{
+.intro{
     margin: auto;
-    width: 96%;
+    margin-left: 4%;
     font-size: 3em;
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    text-align: right;
+    text-align: left;
+    border-style: solid;
+    border-width: 8px;
+    padding: 4%;
+}
+
+.intro p{
+    margin: 0;
+}
+
+.introMainText {
+    font-size: 3em;
 }
 
 .title {
-    font-size: 1.8em;
-    font-family: 'Orbitron', sans-serif;
-    color: white;
+    font-size: 3em;
     text-align: right;
     padding-right: 4%;
 }
@@ -29,6 +38,7 @@ section {
     display: flex;
     justify-content: space-evenly;
     padding-left: 4%;
+    padding-right: 4%;
     height: 80%;
 
 }
@@ -36,7 +46,24 @@ section {
 .gridItem {
     text-align: center;
     background-color: rgba(0,0,0,.5);
-    border-radius: 20px;
     width: 100%;
-
+    font-size: 2em;
+    padding: 2%;
 }
+
+.gridItemTitle{
+    font-size: 2em;
+    margin-top: 4%;
+}
+
+.LinkWrapper {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    color: var(--primary-text-color);
+}
+
+.LinkWrapper:hover {
+    border-bottom: 1px solid var(--primary-text-color);
+}
+

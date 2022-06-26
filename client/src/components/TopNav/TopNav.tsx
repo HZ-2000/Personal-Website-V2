@@ -6,14 +6,14 @@ export const TopNav: React.FC = () => {
         <nav className={styles.main}>
             <ul className={styles.HorizontalNav}>
                 <li>
-                    <Link className={styles.LinkWrapper} to='/'>_Home</Link>
+                    <Link className={styles.LinkWrapper} to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link className={styles.LinkWrapper} to='/contact'>_Contact</Link>
+                    <Link className={styles.LinkWrapper} to='/contact'>Contact</Link>
                 </li>
-                <li>
-                    <Link className={styles.LinkWrapper} to='/projects'>_Projects</Link>
-                </li>
+                {/* <li>
+                    <Link className={styles.LinkWrapper} to='/projects'>Projects</Link>
+                </li> */}
             </ul>
         </nav>
     )

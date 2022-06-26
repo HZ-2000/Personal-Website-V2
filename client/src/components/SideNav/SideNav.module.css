@@ -1,6 +1,6 @@
 .VerticalNav {
     position: fixed;
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--text-font);
     list-style: none;
     color: darkgray;
     font-size: 1.3em;
@@ -12,5 +12,5 @@
 }
 
 .active {
-    color: white;
+    color: var(--primary-text-color);
 }

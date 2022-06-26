@@ -2,7 +2,7 @@
     font-family: var(--text-font);
     color: var(--primary-text-color);
     min-height: 100vh;
-    background-image: url('../../assets/pawel-czerwinski-BNhoExCn9V4-unsplash.jpg');
+    background-image: url('../../assets/img/pawel-czerwinski-BNhoExCn9V4-unsplash.jpg');
     background-size: cover;
 }
 

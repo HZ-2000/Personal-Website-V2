@@ -18,6 +18,8 @@ section {
     border-style: solid;
     border-width: 8px;
     padding: 4%;
+    color: transparent;
+    animation: fadein 1s ease-in-out 2s forwards;
 }
 
 .intro p{
@@ -25,7 +27,7 @@ section {
 }
 
 .introMainText {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .title {
@@ -34,13 +36,19 @@ section {
     padding-right: 4%;
 }
 
+.portrait {
+    background-image: url('../../assets/img/muhammad-kamal-azizi-2GpLuy__erQ-unsplash.jpg');
+    background-size: cover;
+    height: 100%;
+    width: auto;
+}
+
 .projBox {
     display: flex;
     justify-content: space-evenly;
     padding-left: 4%;
     padding-right: 4%;
     height: 80%;
-
 }
 
 .gridItem {
@@ -67,3 +75,12 @@ section {
     border-bottom: 1px solid var(--primary-text-color);
 }
 
+@keyframes fadein {
+    from{
+        color: transparent;
+    }
+
+    to{
+        color: var(--primary-text-color);
+    }
+}

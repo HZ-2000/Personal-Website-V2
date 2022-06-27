@@ -3,7 +3,7 @@
     color: var(--primary-text-color);
     min-height: 100vh;
     background-image: url('../../assets/img/pawel-czerwinski-BNhoExCn9V4-unsplash.jpg');
-    background-size: cover;
+    background-size: cover; 
 }
 
 .title {
@@ -17,12 +17,16 @@
     width: 100%;
     font-size: 2em;
     text-align: center;
+    opacity: 0;
+    animation: fadein 1s ease-in-out 2s forwards;
 }
 
 .ResumeSection {
     width: 100%;
     font-size: 2em;
     text-align: center;
+    opacity: 0;
+    animation: fadein 1s ease-in-out 3s forwards;
 }
 
 .ResumeSection img {
@@ -41,4 +45,14 @@
 
 .LinkWrapper:hover {
     border-bottom: 1px solid var(--primary-text-color);
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100;
+    }
 }

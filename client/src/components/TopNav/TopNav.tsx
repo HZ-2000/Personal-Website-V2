@@ -9,11 +9,11 @@ export const TopNav: React.FC = () => {
                     <Link className={styles.LinkWrapper} to='/'>Home</Link>
                 </li>
                 <li>
+                    <Link className={styles.LinkWrapper} to='/projects'>Projects</Link>
+                </li>
+                <li>
                     <Link className={styles.LinkWrapper} to='/contact'>Contact</Link>
                 </li>
-                {/* <li>
-                    <Link className={styles.LinkWrapper} to='/projects'>Projects</Link>
-                </li> */}
             </ul>
         </nav>
     )

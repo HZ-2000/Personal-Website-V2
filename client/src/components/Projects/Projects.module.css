@@ -1,13 +1,68 @@
 .main {
     font-family: var(--text-font);
     color: var(--primary-text-color);
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('../../assets/img/pawel-czerwinski-BNhoExCn9V4-unsplash.jpg');
     background-size: cover;
 }
 
 .title {
-    position: absolute;
-    font-size: 1.4em;
+    font-size: 3em;
     padding-left: 4%;
+    padding-top: 1.5%;
+    margin: 0%;
+    color: transparent;
+    animation: fadein 1s ease-in-out 1s forwards;
+}
+
+.ProjectGrid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 4%;
+    row-gap: 4%;
+    padding: 4%;
+    padding-top: 2%;
+    min-height: 100vh;
+    color: transparent;
+    animation: fadein 1s ease-in-out 1s forwards;
+}
+
+.Project {
+    text-align: center;
+    padding: 4%;
+    font-size: 1.5em;
+    animation: fadeinproject 1s ease-in-out 1s forwards;
+}
+
+.LinkWrapper {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    color: transparent;
+    animation: fadein 1s ease-in-out 1s forwards;
+}
+
+.LinkWrapper:hover {
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+@keyframes fadein {
+    from{
+        color: transparent;
+    }
+
+    to{
+        color: var(--primary-text-color);
+    }
+}
+
+@keyframes fadeinproject {
+    from{
+        background-color: transparent;
+    }
+
+    to{
+        background-color: rgba(0,0,0,.5);
+    }
 }

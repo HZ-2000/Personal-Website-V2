@@ -18,7 +18,7 @@
     transition: border-bottom 0.5s;
     color: var(--primary-text-color);
     opacity: 0;
-    animation: fadein 1s ease-in-out 1s forwards; 
+    animation: fadein ease-in-out 1s forwards; 
 }
 
 .LinkWrapper:hover {

@@ -11,6 +11,8 @@
     padding-left: 4%;
     padding-top: 1.5%;
     margin: 0%;
+    color: transparent;
+    animation: fadein 1s ease-in-out 1s forwards;
 }
 
 .LinkWrapper {
@@ -26,10 +28,10 @@
 
 @keyframes fadein {
     from{
-        opacity: 0;
+        color: transparent;
     }
 
     to{
-        opacity: 100;
+        color: white;
     }
 }

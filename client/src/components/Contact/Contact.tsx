@@ -1,6 +1,6 @@
 import { TopNav } from '..';
 import styles from './Contact.module.css';
-import resume from '../../assets/img/Screenshot from 2021-10-19 22-04-03.png';
+import resume from '../../assets/img/resume.png';
 
 export const Contact: React.FC = () => {
     document.title = 'ZH | Contact';

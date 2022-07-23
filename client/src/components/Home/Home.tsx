@@ -1,5 +1,5 @@
 import styles from './Home.module.css';
-import { DiGithubBadge, DiReact, DiPython } from 'react-icons/di';
+import { DiGithubBadge, DiReact } from 'react-icons/di';
 import { TopNav, SideNav } from '..';
 
 export const Home: React.FC = () => {
@@ -40,23 +40,28 @@ export const Home: React.FC = () => {
                     <p className={styles.title}>featured projects</p>
                     <div className={styles.projBox}>
                         <div className={styles.gridItem}>
-                            <p className={styles.gridItemTitle}>personal website v2</p>
+                            <p className={styles.gridItemTitle}>personal website</p>
                             <p>
-                                this is the website you are currently visiting! it is a great place to learn 
-                                new technologies or just have fun trying to make interesting designs. the current iteration 
-                                is very basic however in the future i am planning on adding to it.
+                                My website has been rebuilt from the ground up with new code, a new look, and room for even more growth in the future. 
+                                overall there is still a lot of areas to tinker with and improve such as the responsive aspect of the site and a few style details, 
+                                however overall i am excited to present this new version!
                             </p>
                             <p>languages: <DiReact style={{verticalAlign: "middle"}}/>react</p>
-                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo'>
+                            <a href='https://github.com/HZ-2000/Personal-Website-V2'>
                                 <DiGithubBadge className={styles.LinkWrapper} size="2em"/>
                             </a>
                         </div>
                         <div style={{"width": "4%"}}/>
                         <div className={styles.gridItem}>
-                            <p className={styles.gridItemTitle}>machine learning demo</p>
-                            <p>this is a brief description of the project and will be displayed above the link to my github where the project is!</p>
-                            <p>languages: <DiPython style={{verticalAlign: "middle"}}/>python</p>
-                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo'>
+                            <p className={styles.gridItemTitle}>pomodoro timer</p>
+                            <p>
+                                a web page with a journal style log and a pomodoro timer to help with productivity. 
+                                the system works by sectioning your time into 25 minute chunks called pomodoros, 
+                                at the end of 25 minutes of focused work you have completed 1 pomodoro and get a 5 minute break. 
+                                complete 3 pomodoros and you get a 30 minute break.
+                            </p>
+                            <p>languages: <DiReact style={{verticalAlign: "middle"}}/>react</p>
+                            <a href='https://github.com/HZ-2000/Pomodoro-Timer'>
                                 <DiGithubBadge className={styles.LinkWrapper} size="2em"/>
                             </a>
                         </div>

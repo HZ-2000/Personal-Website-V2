@@ -1,4 +1,5 @@
 :root {
-    --text-font: 'Roboto', sans-serif;
+    /* --text-font: 'Roboto', sans-serif; */
+    --text-font: "Major Mono Display";
     --primary-text-color: white;
 }

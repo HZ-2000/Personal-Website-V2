@@ -12,7 +12,7 @@ section {
 
 .intro{
     margin: auto;
-    margin-left: 4%;
+    margin-left: 8%;
     font-size: 3em;
     text-align: left;
     border-style: solid;
@@ -55,7 +55,7 @@ section {
     text-align: center;
     background-color: rgba(0,0,0,.5);
     width: 100%;
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 2%;
 }
 
@@ -69,7 +69,6 @@ section {
 }
 
 .LinkWrapper {
-    text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
     color: var(--primary-text-color);

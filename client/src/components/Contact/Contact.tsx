@@ -9,14 +9,14 @@ export const Contact: React.FC = () => {
         <div className={styles.main}>
             <TopNav />
             <div>
-                <h1 className={styles.title}>Contact</h1>
+                <h1 className={styles.title}>contact</h1>
                 <div className={styles.InfoSection}>
-                    <h1>Info</h1>
-                    <p>Phone: 1.509.822.9076</p>
-                    <p>Email: zach@zachheimbigner.io</p>
+                    <h1>info</h1>
+                    <p>phone: 1.509.822.9076</p>
+                    <p>email: zach@zachheimbigner.io</p>
                 </div>
                 <div className={styles.ResumeSection}>
-                    <h1>Resume:</h1>
+                    <h1>resume:</h1>
                     <div>
                         <a className={styles.LinkWrapper} href={require('../../assets/doc/Resume.pdf')}>link</a> 
                     </div>

@@ -11,23 +11,23 @@ export const Home: React.FC = () => {
             <SideNav />
             <section id="home">
                 <div className={styles.intro}>
-                    <p className={styles.introMainText}>"Cogito, ergo sum"</p>
-                    <p>- I think, therfore I am</p>
+                    <p className={styles.introMainText}>cogito, ergo sum</p>
+                    <p>i think, therfore i am</p>
                 </div>
             </section>
             <section id="projects">
                 <div>
-                    <p className={styles.title}>About</p>
+                    <p className={styles.title}>about</p>
                     <div className={styles.projBox}>
                         <div className={styles.gridItem}>
                             <div className={styles.portrait}/>
                         </div>
                         <div style={{"width": "4%"}}/>
                         <div className={styles.gridItem}>
-                            <p className={styles.gridItemTitle}>Welcome, Im Zach!</p>
+                            <p className={styles.gridItemTitle}>welcome, im zach!</p>
                             <p>
-                                I am currently a intern at SEL and enjoy the challenges of learning new technologies and ideas,
-                                 whilst simultaneously getting to use them in the development process! outside of work I enjoy cycling
+                                i am currently a intern at sel and enjoy the challenges of learning new technologies and ideas,
+                                 whilst simultaneously getting to use them in the development process! outside of work i enjoy cycling
                                  in most of its forms, art of the modern era, and making multiple iterations of odd side projects like 
                                  this website!
                             </p>
@@ -37,25 +37,28 @@ export const Home: React.FC = () => {
             </section>
             <section id="contact">
                 <div>
-                    <p className={styles.title}>Featured Projects</p>
+                    <p className={styles.title}>featured projects</p>
                     <div className={styles.projBox}>
                         <div className={styles.gridItem}>
-                            <p className={styles.gridItemTitle}>Personal Website V2</p>
+                            <p className={styles.gridItemTitle}>personal website v2</p>
                             <p>
-                                This is the website you are currently visiting! It is a great test bed for me to learn 
-                                new technologies or just have fun trying to make interesting designs. The current iteration 
-                                is very basic however in the future I am planning on adding to it extensivley with games, 
-                                weird tools, and fun side projects.
+                                this is the website you are currently visiting! it is a great place to learn 
+                                new technologies or just have fun trying to make interesting designs. the current iteration 
+                                is very basic however in the future i am planning on adding to it.
                             </p>
-                            <p>Languages: <DiReact style={{verticalAlign: "middle"}}/>React</p>
-                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo' className={styles.LinkWrapper}><DiGithubBadge style={{verticalAlign: "middle"}}/>GitHub</a>
+                            <p>languages: <DiReact style={{verticalAlign: "middle"}}/>react</p>
+                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo'>
+                                <DiGithubBadge className={styles.LinkWrapper} size="2em"/>
+                            </a>
                         </div>
                         <div style={{"width": "4%"}}/>
                         <div className={styles.gridItem}>
-                            <p className={styles.gridItemTitle}>Machine Learning Demo</p>
+                            <p className={styles.gridItemTitle}>machine learning demo</p>
                             <p>this is a brief description of the project and will be displayed above the link to my github where the project is!</p>
-                            <p>Languages: <DiPython style={{verticalAlign: "middle"}}/>Python</p>
-                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo' className={styles.LinkWrapper}><DiGithubBadge  style={{verticalAlign: "middle"}}/>GitHub</a>
+                            <p>languages: <DiPython style={{verticalAlign: "middle"}}/>python</p>
+                            <a href='https://github.com/HZ-2000/Machine-Learning-Demo'>
+                                <DiGithubBadge className={styles.LinkWrapper} size="2em"/>
+                            </a>
                         </div>
                     </div>
                 </div>

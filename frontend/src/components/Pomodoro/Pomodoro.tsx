@@ -1,5 +1,5 @@
 import { TopNav } from '..';
-import {Timer, Journal} from '../';
+import {Timer, Journal} from '..';
 import styles from './Pomodoro.module.css';
 
 export const Pomodoro: React.FC = () => {

@@ -1,6 +1,6 @@
 import styles from './Home.module.css';
 import { DiGithubBadge, DiReact } from 'react-icons/di';
-import { TopNav, SideNav } from '..';
+import { TopNav } from '..';
 
 export const Home: React.FC = () => {
     document.title = 'ZH | Home';
@@ -8,7 +8,6 @@ export const Home: React.FC = () => {
     return(
         <div className={styles.main}>
             <TopNav />
-            <SideNav />
             <section id="home">
                 <div className={styles.intro}>
                     <p className={styles.introMainText}>cogito, ergo sum</p>

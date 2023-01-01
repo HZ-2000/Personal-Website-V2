@@ -1,3 +1,4 @@
+import React from 'react';
 import { TopNav } from '..';
 import { DiGithubBadge, DiReact, DiMongodb, DiNodejsSmall, DiUnitySmall } from 'react-icons/di';
 import styles from './Projects.module.css';

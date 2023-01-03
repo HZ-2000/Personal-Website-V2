@@ -1,5 +1,5 @@
 import './index.css';
-import { App, Home } from './components';
+import { App, Home, Projects } from './components';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router';
 import { createBrowserRouter } from 'react-router-dom';
@@ -12,12 +12,17 @@ const router = createBrowserRouter([
         element: <App/>,
         children: [
             {
-                path: "home",
+                path: "",
                 element: <Home/>
+            },
+            {
+                path: "projects",
+                element: <Projects/>
             }
         ]
     }
 ])
+
 const container = document.getElementById('root');
 const root = createRoot(container!); // createRoot(container!) if you use TypeScript
 

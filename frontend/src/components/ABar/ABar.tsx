@@ -4,7 +4,8 @@ import {
     Toolbar,
     Box,
     Typography,
-    IconButton
+    IconButton,
+    Switch
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -23,10 +24,10 @@ export const ABar: React.FC = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        News
+                        (insert home icon here)
                     </Typography>
                     <Typography>
-                        This is the other side
+                        <Switch color="secondary" />
                     </Typography>
                 </Toolbar>
             </AppBar>

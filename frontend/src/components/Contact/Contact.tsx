@@ -1,4 +1,3 @@
-import { TopNav } from '..';
 import styles from './Contact.module.css';
 import resume from '../../assets/img/resume.png';
 
@@ -7,7 +6,6 @@ export const Contact: React.FC = () => {
 
     return (
         <div className={styles.main}>
-            <TopNav />
             <div>
                 <h1 className={styles.title}>contact</h1>
                 <div className={styles.InfoSection}>

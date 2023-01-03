@@ -1,5 +1,16 @@
-import { Router } from '../';
+import { Container, Box } from '@mui/system';
+import { Outlet } from 'react-router-dom';
+import React from 'react';
+import { ABar } from '../';
+
 
 export const App: React.FC = () => {
-    return (<Router />)
+    return (
+        <React.Fragment>
+            <ABar />
+            <Box>
+                <Outlet />
+            </Box>
+        </React.Fragment>
+    )
 }

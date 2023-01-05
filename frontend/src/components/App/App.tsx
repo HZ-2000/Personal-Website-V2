@@ -1,38 +1,34 @@
-import { Box } from '@mui/system';
+import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import React from 'react';
+import { Box, Container, ThemeProvider, createTheme } from '@mui/material';
 import { ABar } from '../';
-import { createTheme } from '@mui/material/styles';
-import { ThemeProvider } from '@emotion/react';
 
-const theme = createTheme({
+
+const lightTheme = createTheme({
     palette: {
-        mode: "light",
-        primary: {
-            light: '#718792',
-            main: '#455a64',
-            dark: '#1c313a',
-            contrastText: '#fff',
-        },
-        secondary: {
-            light: '#87ffff',
-            main: '#4ccfe0',
-            dark: '#009eae',
-            contrastText: '#000',
-        },
+        mode: 'light',
+    },
+});
+
+const darkTheme = createTheme({
+    palette: {
+        mode: 'dark',
     },
 });
 
 
-export const App: React.FC = () => {
+export function App() {
+    const [theme, setTheme] = useState("light");
+
     return (
-        <React.Fragment>
-            <ThemeProvider theme={theme}>
-                <ABar />
-                <Box>
+        <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+            <Box sx={{ flexGrow: 1 }}>
+                <ABar theme={theme} setTheme={setTheme} />
+                {/* render content of page */}
+                <Container maxWidth="lg">
                     <Outlet />
-                </Box>
-            </ThemeProvider>
-        </React.Fragment>
-    )
+                </Container>
+            </Box>
+        </ThemeProvider>
+    );
 }

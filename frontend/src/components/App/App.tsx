@@ -24,7 +24,9 @@ export function App() {
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <Box sx={{ flexGrow: 1 }}>
                 <ABar theme={theme} setTheme={setTheme} />
+
                 {/* render content of page */}
+                
                 <Container maxWidth="lg">
                     <Outlet />
                 </Container>

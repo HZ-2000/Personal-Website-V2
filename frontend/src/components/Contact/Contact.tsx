@@ -1,26 +1,12 @@
-import styles from './Contact.module.css';
-import resume from '../../assets/img/resume.png';
+import { Typography } from '@mui/material';
+
 
 export const Contact: React.FC = () => {
     document.title = 'ZH | Contact';
 
     return (
-        <div className={styles.main}>
-            <div>
-                <h1 className={styles.title}>contact</h1>
-                <div className={styles.InfoSection}>
-                    <h1>info</h1>
-                    <p>phone: 1.509.822.9076</p>
-                    <p>email: zach@zachheimbigner.io</p>
-                </div>
-                <div className={styles.ResumeSection}>
-                    <h1>resume:</h1>
-                    <div>
-                        <a className={styles.LinkWrapper} href={require('../../assets/doc/Resume.pdf')}>link</a> 
-                    </div>
-                    <img src={resume} alt='resume'/>
-                </div>
-            </div>
+        <div>
+            <Typography variant="h1">Contact</Typography>
         </div>
     )
 }

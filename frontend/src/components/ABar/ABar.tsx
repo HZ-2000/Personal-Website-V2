@@ -43,7 +43,7 @@ const pages = [
     },
 ]
 
-const drawerWidth = 440;
+const drawerWidth = 240;
 
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',

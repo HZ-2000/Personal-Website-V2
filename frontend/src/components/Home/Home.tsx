@@ -1,5 +1,6 @@
 import React from 'react';
-import robot from '../../assets/img/jason-leung-iDQVmcPFOCI-unsplash.jpg'
+import large_robot from '../../assets/img/jason-leung-iDQVmcPFOCI-unsplash.jpg'
+import small_robot from '../../assets/img/jason-leung-HBGYvOKXu8A-unsplash.jpg';
 import { styled } from '@mui/material/styles';
 import {
     Button,
@@ -34,7 +35,7 @@ export const Home: React.FC = () => {
                     <Typography variant="h1">Hello!</Typography>
                 </Grid>
                 <Grid item xs>
-                    <Img alt="Roboto" src={robot} />
+                    <Img alt="Roboto" src={large_robot} />
                 </Grid>
             </Grid>
 
@@ -53,7 +54,7 @@ export const Home: React.FC = () => {
                             component="img"
                             alt="roboto"
                             height="500"
-                            image={robot}
+                            image={small_robot}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h3" component="div">
@@ -75,7 +76,7 @@ export const Home: React.FC = () => {
                             component="img"
                             alt="roboto"
                             height="500"
-                            image={robot}
+                            image={small_robot}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h3" component="div">

@@ -26,15 +26,15 @@ export const Home: React.FC = () => {
     document.title = 'ZH | Home';
 
     return (
-        <Stack spacing={8} sx={{ mt: 8 }}>
+        <Stack spacing={8}>
 
             {/* main hero section */}
 
             <Grid container direction="row" alignItems="center">
-                <Grid item xs sx={{ textAlign: "center" }}>
-                    <Typography variant="h1">Hello!</Typography>
+                <Grid item xs={6} sx={{ textAlign: "center" }}>
+                    <Typography variant="h1" color="text.primary">Hello!</Typography>
                 </Grid>
-                <Grid item xs>
+                <Grid item xs={6}>
                     <Img alt="Roboto" src={large_robot} />
                 </Grid>
             </Grid>

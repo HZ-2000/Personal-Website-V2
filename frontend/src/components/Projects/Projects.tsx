@@ -7,7 +7,7 @@ export const Projects: React.FC = () => {
 
     return (
         <div>
-            <Typography variant="h1">Projects</Typography>
+            <Typography variant="h1" color="text.primary">Projects</Typography>
         </div>
     )
 }

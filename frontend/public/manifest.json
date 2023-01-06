@@ -1,0 +1,20 @@
+{
+    "name": "Zach Heimbigner's Personal Website",
+    "short_name": "ZH Personal Website",
+    "authort": "Zach Heimbigner",
+    "icons": [
+        {
+            "src": "./favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./favicons/android-chrome-192x192.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

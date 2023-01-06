@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import {
     AppBar,
+    Avatar,
+    Box,
     Container,
     IconButton,
     Toolbar,
@@ -23,6 +25,7 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import Favicon from '../../assets/img/android-chrome-512x512.png';
 
 
 const pages = [
@@ -56,7 +59,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 
 interface aBarProps {
-    setTheme: (args:any) => void,
+    setTheme: (args: any) => void,
     theme: string
 }
 
@@ -79,20 +82,19 @@ export const ABar = (props: aBarProps) => {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            Insert Icon
-                        </Typography>
+                        <Avatar alt="Icon" src={Favicon} variant="rounded" />
+                        <Box sx={{ flexGrow: 1 }} />
                         <IconButton
                             color="inherit"
                             aria-label="open drawer"
                             onClick={() => {
-                                const theme = (props.theme === "light"? "dark": "light")
+                                const theme = (props.theme === "light" ? "dark" : "light")
                                 props.setTheme(theme);
                             }}
                             edge="start"
                             size="large"
                         >
-                            {props.theme === "light"? <Brightness4Icon/>:<DarkModeIcon/>}
+                            {props.theme === "light" ? <Brightness4Icon /> : <DarkModeIcon />}
                         </IconButton>
                     </Toolbar>
                 </Container>
@@ -116,7 +118,7 @@ export const ABar = (props: aBarProps) => {
                 </DrawerHeader>
                 <List>
                     {pages.map((page: any) => (
-                        <Link key={page.name} to={page.link} style={{textDecoration: "none", color:"inherit"}}>
+                        <Link key={page.name} to={page.link} style={{ textDecoration: "none", color: "inherit" }}>
                             <ListItem disablePadding>
                                 <ListItemButton onClick={() => setOpen(false)}>
                                     <ListItemIcon>

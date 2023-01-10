@@ -43,12 +43,7 @@ export function App() {
                 minHeight: "100vh"
             }}>
                 <ABar theme={theme} setTheme={setTheme} />
-
-                {/* render content of page */}
-                
-                <Container maxWidth="lg" sx={{ mt: 8 }}>
-                    <Outlet />
-                </Container>
+                <Outlet />
             </Box>
         </ThemeProvider>
     );

@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 
 
 export const Contact: React.FC = () => {
-    document.title = 'ZH | Contact';
+    document.title = '| Contact';
 
     return (
         <div>

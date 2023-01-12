@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Box, Container, ThemeProvider, createTheme } from '@mui/material';
+import { Box, ThemeProvider, createTheme } from '@mui/material';
 import { ABar } from '../';
 
 
@@ -31,7 +31,7 @@ const darkTheme = createTheme({
 
 
 export function App() {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     return (
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>

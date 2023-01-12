@@ -5,6 +5,7 @@ import {
     CardContent,
     CardActions,
     Container,
+    Divider,
     Grid,
     Typography,
 } from '@mui/material';
@@ -18,6 +19,8 @@ export const Projects: React.FC = () => {
     return (
         <Container maxWidth="lg" sx={{ pt: 8, pb: 8 }}>
             <Typography variant="h1" color="text.primary">Projects</Typography>
+
+            <Divider sx={{ mb: 8 }}/>
 
             <Grid container spacing={2}>
                 {projects.map((project: any) => {

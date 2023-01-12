@@ -21,7 +21,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
 import HomeIcon from '@mui/icons-material/Home';
-import ContactsIcon from '@mui/icons-material/Contacts';
+import AnchorIcon from '@mui/icons-material/Anchor';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -40,9 +40,9 @@ const pages = [
         link: "/projects",
     },
     {
-        name: "Contact",
-        icon: <ContactsIcon />,
-        link: "/contact",
+        name: "Experience",
+        icon: <AnchorIcon />,
+        link: "/experience",
     },
 ]
 

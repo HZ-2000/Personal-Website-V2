@@ -1,6 +1,5 @@
 import {
     Button,
-    Box,
     Card,
     CardMedia,
     CardContent,

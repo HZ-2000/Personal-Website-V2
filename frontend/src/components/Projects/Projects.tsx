@@ -22,7 +22,7 @@ export const Projects: React.FC = () => {
             <Grid container spacing={2}>
                 {projects.map((project: any) => {
                     return (
-                        <Grid item xs>
+                        <Grid item xs key={project.name}>
                             <Card>
                                 <CardMedia
                                     component="img"

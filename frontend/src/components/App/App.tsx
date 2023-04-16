@@ -11,7 +11,7 @@ const lightTheme = createTheme({
         },
         background: {
             default: "#E9E5E3",
-            paper: "#8FA39E"
+            paper: "#1CA9C9"
         }
     },
 });
@@ -20,11 +20,11 @@ const darkTheme = createTheme({
     palette: {
         mode: 'dark',
         primary: {
-            main: "#748E81"
+            main: "#1CA9C9"
         },
         background: {
-            default: "#748E81",
-            paper: "#274442"
+            default: "#1CA9C9",
+            paper: "#000000"
         }
     },
 });
@@ -38,8 +38,8 @@ export function App() {
             <Box sx={{ 
                 flexGrow: 1, 
                 backgroundImage: theme === "light" ? 
-                    'linear-gradient(132deg, #E9E5E3 0.00%, #8FA39E 100.00%)':
-                    'linear-gradient(132deg, #748E81 0.00%, #274442 100.00%)',
+                    'linear-gradient(132deg, #E9E5E3 0.00%, #1CA9C9 100.00%)':
+                    'linear-gradient(132deg, #1CA9C9 0.00%, #000000 100.00%)',
                 minHeight: "100vh"
             }}>
                 <ABar theme={theme} setTheme={setTheme} />

@@ -10,7 +10,7 @@ export const Experience: React.FC = () => {
     document.title = '| Experience';
 
     return (
-        <Container maxWidth="lg" sx={{ mt: 8, pb: 8 }}>
+        <Container maxWidth="lg" sx={{ pt: 10 , pb: 10 }}>
             <Typography variant="h1" color="text.primary">Resume</Typography>
 
             <Divider sx={{ mb: 8 }}/>

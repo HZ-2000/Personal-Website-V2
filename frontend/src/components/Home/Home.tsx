@@ -1,5 +1,5 @@
 import React from 'react';
-import forrest from '../../assets/img/adam-vradenburg-_gu7E90QChU-unsplash.jpg'
+import forrest from '../../assets/img/ivan-bandura-2FEE6BR343k-unsplash.jpg'
 import mountain from '../../assets/img/benjamin-voros-phIFdC6lA4E-unsplash.jpg'
 import {
     Box,
@@ -11,16 +11,18 @@ import {
     Container,
     Typography,
     Divider,
-    Grid
+    Grid,
+    IconButton
 } from '@mui/material';
 import { Stack } from '@mui/system';
-import { prandtld_system, personal_website } from '../../common/common';
+import { projects } from '../../common/common';
+
+
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 export const Home: React.FC = () => {
     document.title = '| Home';
-
-    const projects = [ personal_website, prandtld_system ]
 
     return (
         <React.Fragment>
@@ -51,7 +53,7 @@ export const Home: React.FC = () => {
 
                     <Divider flexItem><Typography color="text.primary">ABOUT</Typography></Divider>
 
-                    <Card sx={{ display: 'flex'}}>
+                    <Card sx={{ display: 'flex' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                             <CardContent>
                                 <Typography gutterBottom variant="h3" component="div">
@@ -59,14 +61,24 @@ export const Home: React.FC = () => {
                                 </Typography>
                                 <Typography variant="h6" color="text.secondary">
                                     I currently intern at Schweitzer Engineering Labrotories
-                                    where I contribute to our internal tooling. Most of what I do is full 
-                                    stack web apps with React, Typescript, Python, and other technologies that 
-                                    support our stack. I also attend the University of Idaho pursuing a degree 
-                                    in Computer Science, graduating this May. Outside of school I love nature 
-                                    and the activities you do in it, including but not limited too: Mountain 
+                                    where I contribute to our internal tooling. Most of what I do is full
+                                    stack web apps with React, Typescript, Python, and other technologies that
+                                    support our stack. I also attend the University of Idaho pursuing a degree
+                                    in Computer Science, graduating this May. Outside of school I love nature
+                                    and the activities you do in it, including but not limited too: Mountain
                                     Biking, Hiking, Backpacking, and Skiing.
-
                                 </Typography>
+
+                                <Box 
+                                    display="flex"
+                                    justifyContent="center"
+                                    alignItems="center"
+                                    height="50%"
+                                >
+                                    <IconButton href='https://github.com/HZ-2000'>
+                                        <GitHubIcon fontSize='large'/>
+                                    </IconButton>
+                                </Box>
                             </CardContent>
                         </Box>
                         <CardMedia
@@ -81,7 +93,7 @@ export const Home: React.FC = () => {
                     <Divider flexItem><Typography color="text.primary">PROJECTS</Typography></Divider>
 
                     <Grid container spacing={2}>
-                        {projects.map((project: any) => {
+                        {projects.slice(0, 2).map((project: any) => {
                             return (
                                 <Grid item xs key={project.name}>
                                     <Card>

@@ -69,23 +69,22 @@ export const ABar = (props: aBarProps) => {
 
     return (
         <React.Fragment>
-            <AppBar position="static">
+            <AppBar position="absolute" color='transparent'>
                 <Container maxWidth="lg">
                     <Toolbar>
                         <IconButton
-                            color="inherit"
                             aria-label="open drawer"
                             onClick={() => setOpen(true)}
                             edge="start"
                             size="large"
-                            sx={{ mr: 2 }}
+                            sx={{ mr: 2, color: "white" }}
                         >
                             <MenuIcon />
                         </IconButton>
                         <Avatar alt="Icon" src={Favicon} variant="rounded" />
                         <Box sx={{ flexGrow: 1 }} />
                         <IconButton
-                            color="inherit"
+                            sx={{ color: "white"}}
                             aria-label="open drawer"
                             onClick={() => {
                                 const theme = (props.theme === "light" ? "dark" : "light")

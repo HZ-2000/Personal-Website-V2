@@ -17,7 +17,7 @@ export const Projects: React.FC = () => {
     document.title = '| Projects';
 
     return (
-        <Container maxWidth="lg" sx={{ pt: 8, pb: 8 }}>
+        <Container maxWidth="lg" sx={{ pt: 10, pb: 10 }}>
             <Typography variant="h1" color="text.primary">Projects</Typography>
 
             <Divider sx={{ mb: 8 }}/>

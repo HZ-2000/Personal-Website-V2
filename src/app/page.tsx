@@ -51,7 +51,6 @@ export default function Home(){
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                             <CardContent>
                                 <Typography gutterBottom variant="h3" component="div">
-                                  {/* ts-ignore */}
                                     Hi, I'm Zach
                                 </Typography>
                                 <Typography variant="h6" color="text.secondary">

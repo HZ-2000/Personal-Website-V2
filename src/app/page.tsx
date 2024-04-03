@@ -1,6 +1,4 @@
 import React from 'react'
-import sea from '/assets/img/ivan-bandura-2FEE6BR343k-unsplash.jpg'
-import mountain from '/assets/img/benjamin-voros-phIFdC6lA4E-unsplash.jpg'
 import {
     Box,
     Button,
@@ -16,8 +14,6 @@ import {
 } from '@mui/material';
 import { Stack } from '@mui/system';
 import { projects } from '../common/common';
-
-
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
 
@@ -30,8 +26,8 @@ export default function Home(){
                 sx={{
                     width: "100%",
                     height: "80vh",
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${sea})`,
                     backgroundPosition: "center",
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/ivan-bandura-2FEE6BR343k-unsplash.jpg)`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     display: "flex",
@@ -41,7 +37,6 @@ export default function Home(){
             >
                 <Typography variant="h1" color="#fff">Hello!</Typography>
             </Box>
-
 
             <Container maxWidth="lg">
                 <Stack
@@ -56,6 +51,7 @@ export default function Home(){
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                             <CardContent>
                                 <Typography gutterBottom variant="h3" component="div">
+                                  {/* ts-ignore */}
                                     Hi, I'm Zach
                                 </Typography>
                                 <Typography variant="h6" color="text.secondary">
@@ -72,7 +68,6 @@ export default function Home(){
                                     display="flex"
                                     justifyContent="center"
                                     alignItems="center"
-                                    height="50%"
                                 >
                                     <IconButton href='https://github.com/HZ-2000'>
                                         <GitHubIcon fontSize='large'/>
@@ -80,13 +75,7 @@ export default function Home(){
                                 </Box>
                             </CardContent>
                         </Box>
-                        <CardMedia
-                            component="img"
-                            alt="roboto"
-                            height="500"
-                            sx={{ width: 500 }}
-                            image={}
-                        />
+                        <Image alt='resume' src={'/assets/img/benjamin-voros-phIFdC6lA4E-unsplash.jpg'} width={600} height={100}/>
                     </Card>
 
                     <Divider flexItem><Typography color="text.primary">PROJECTS</Typography></Divider>

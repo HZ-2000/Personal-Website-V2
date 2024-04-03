@@ -1,6 +1,6 @@
-import React from 'react';
-import forrest from '../../assets/img/ivan-bandura-2FEE6BR343k-unsplash.jpg'
-import mountain from '../../assets/img/benjamin-voros-phIFdC6lA4E-unsplash.jpg'
+import React from 'react'
+import sea from '/assets/img/ivan-bandura-2FEE6BR343k-unsplash.jpg'
+import mountain from '/assets/img/benjamin-voros-phIFdC6lA4E-unsplash.jpg'
 import {
     Box,
     Button,
@@ -15,23 +15,22 @@ import {
     IconButton
 } from '@mui/material';
 import { Stack } from '@mui/system';
-import { projects } from '../../common/common';
+import { projects } from '../common/common';
 
 
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Image from 'next/image';
 
 
-export const Home: React.FC = () => {
-    document.title = '| Home';
-
+export default function Home(){
     return (
-        <React.Fragment>
+        <>
             {/* main hero section */}
             <Box
                 sx={{
                     width: "100%",
                     height: "80vh",
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${forrest})`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${sea})`,
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -86,7 +85,7 @@ export const Home: React.FC = () => {
                             alt="roboto"
                             height="500"
                             sx={{ width: 500 }}
-                            image={mountain}
+                            image={}
                         />
                     </Card>
 
@@ -125,6 +124,6 @@ export const Home: React.FC = () => {
                     <div />
                 </Stack>
             </Container>
-        </React.Fragment>
+        </>
     )
 }

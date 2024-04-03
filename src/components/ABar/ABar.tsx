@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 import { styled } from '@mui/material/styles';
 import {
     AppBar,
@@ -25,7 +25,6 @@ import AnchorIcon from '@mui/icons-material/Anchor';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import Favicon from '../../assets/img/android-chrome-512x512.png';
 
 
 const pages = [
@@ -37,12 +36,12 @@ const pages = [
     {
         name: "Projects",
         icon: <TerminalIcon />,
-        link: "/projects",
+        link: "/Projects",
     },
     {
         name: "Experience",
         icon: <AnchorIcon />,
-        link: "/experience",
+        link: "/Experience",
     },
 ]
 
@@ -64,7 +63,7 @@ interface aBarProps {
 }
 
 
-export const ABar = (props: aBarProps) => {
+export default function ABar (props: aBarProps) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -81,7 +80,7 @@ export const ABar = (props: aBarProps) => {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Avatar alt="Icon" src={Favicon} variant="rounded" />
+                        <Avatar alt="Icon" src={'/../assets/img/android-chrome-512x512.png'} variant="rounded" />
                         <Box sx={{ flexGrow: 1 }} />
                         <IconButton
                             sx={{ color: "white"}}
@@ -117,7 +116,7 @@ export const ABar = (props: aBarProps) => {
                 </DrawerHeader>
                 <List>
                     {pages.map((page: any) => (
-                        <Link key={page.name} to={page.link} style={{ textDecoration: "none", color: "inherit" }}>
+                        <Link key={page.name} href={page.link} style={{ textDecoration: "none", color: "inherit" }}>
                             <ListItem disablePadding>
                                 <ListItemButton onClick={() => setOpen(false)}>
                                     <ListItemIcon>

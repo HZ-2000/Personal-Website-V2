@@ -2,20 +2,17 @@ import {
     Container,
     Divider,
     Typography 
-} from '@mui/material';
-import resume from '../../assets/img/resume.png'
+} from '@mui/material'
+import React from 'react'
+import Image from 'next/image'
 
 
-export const Experience: React.FC = () => {
-    document.title = '| Experience';
-
+export default function Experience () {
     return (
         <Container maxWidth="lg" sx={{ pt: 10 , pb: 10 }}>
             <Typography variant="h1" color="text.primary">Resume</Typography>
-
             <Divider sx={{ mb: 8 }}/>
-
-            <img alt='resume' src={resume} style={{ width: "inherit", }}/>
+            <Image alt='resume' src={'/assets/img/resume.png'} style={{ width: "inherit", }} width={1000} height={1000}/>
         </Container>
     )
 }

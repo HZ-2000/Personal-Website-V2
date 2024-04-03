@@ -13,9 +13,7 @@ import React from 'react';
 import { projects } from '../../common/common';
 
 
-export const Projects: React.FC = () => {
-    document.title = '| Projects';
-
+export default function Projects () {
     return (
         <Container maxWidth="lg" sx={{ pt: 10, pb: 10 }}>
             <Typography variant="h1" color="text.primary">Projects</Typography>

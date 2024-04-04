@@ -11,11 +11,11 @@ import {
     Divider,
     Grid,
     IconButton
-} from '@mui/material';
-import { Stack } from '@mui/system';
-import { projects } from '../common/common';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import Image from 'next/image';
+} from '@mui/material'
+import { Stack } from '@mui/system'
+import { projects } from '../common/common'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import Image from 'next/image'
 
 
 export default function Home(){
@@ -27,7 +27,7 @@ export default function Home(){
                     width: "100%",
                     height: "80vh",
                     backgroundPosition: "center",
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/ivan-bandura-2FEE6BR343k-unsplash.jpg)`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('ivan-bandura-2FEE6BR343k-unsplash.jpg')`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     display: "flex",

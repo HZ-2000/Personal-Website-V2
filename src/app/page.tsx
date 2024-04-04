@@ -27,7 +27,7 @@ export default function Home(){
                     width: "100%",
                     height: "80vh",
                     backgroundPosition: "center",
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/ivan-bandura-2FEE6BR343k-unsplash.jpg)`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/ivan-bandura-2FEE6BR343k-unsplash.jpg)`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     display: "flex",
@@ -74,7 +74,7 @@ export default function Home(){
                                 </Box>
                             </CardContent>
                         </Box>
-                        <Image alt='resume' src={'/assets/img/benjamin-voros-phIFdC6lA4E-unsplash.jpg'} width={600} height={100}/>
+                        <Image alt='resume' src={'/benjamin-voros-phIFdC6lA4E-unsplash.jpg'} width={600} height={100}/>
                     </Card>
 
                     <Divider flexItem><Typography color="text.primary">PROJECTS</Typography></Divider>

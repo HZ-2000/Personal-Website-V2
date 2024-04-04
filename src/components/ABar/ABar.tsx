@@ -80,7 +80,7 @@ export default function ABar (props: aBarProps) {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Avatar alt="Icon" src={'/../assets/img/android-chrome-512x512.png'} variant="rounded" />
+                        <Avatar alt="Icon" src={'/favicon.ico'} variant="rounded" />
                         <Box sx={{ flexGrow: 1 }} />
                         <IconButton
                             sx={{ color: "white"}}
